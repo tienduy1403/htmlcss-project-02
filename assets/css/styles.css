@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #171100;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -27,15 +31,16 @@ a {
     padding: 17px 24px;
     display: inline-block;
     min-width: 118px;
-    background: #171100;
+    background: var(--primary-color);
     text-align: center;
     color: #ffffff;
     border-radius: 25px;
 }
 
 .btn:hover {
-    opacity: 0.9;
-    box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.1);
+    /* opacity: 0.9; */
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    background: #ffb900;
 }
 
 .line-clamp {
@@ -45,12 +50,30 @@ a {
     overflow: hidden;
 }
 
+.title {
+    color: var(--primary-color);
+    font-family: Sen;
+    font-weight: 700;
+}
+
+.title.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+
+.title.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+}
+
 /* header */
 
 .header {
     position: sticky;
-    top: -16px;
-    padding-top: 16px;
+    top: -28px;
+    padding-top: 28px;
     background: #fffcf4;
     z-index: 1;
 }
@@ -58,7 +81,7 @@ a {
 /* Navbar */
 .navbar {
     margin-left: auto;
-    padding: 20px 0;
+    padding: 8px 0;
     display: flex;
     align-items: center;
 }
@@ -86,7 +109,7 @@ a {
 .navbar .click-active {
     padding: 8px 24px;
     position: relative;
-    color: #171100;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -98,12 +121,12 @@ a {
     width: 12px;
     height: 2px;
     border-radius: 1px;
-    background: #171100;
+    background: var(--primary-color);
 }
 
 .navbar .click:hover {
     text-shadow: 1px 0 0 currentColor;
-    color: #171100;
+    color: var(--primary-color);
 }
 
 .navbar .sign-up {
@@ -114,7 +137,7 @@ a {
 .hero {
     padding-top: 44px;
     background: #fffcf4;
-    height: calc(100vh - 106px);
+    height: calc(100vh - 94px);
 }
 
 .hero-body {
@@ -179,7 +202,7 @@ a {
 }
 
 .base .desc .name {
-    color: #171100;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
@@ -187,15 +210,6 @@ a {
 
 .hero-text {
     padding: 64px 0 64px 230px;
-}
-
-.hero-text .title {
-    color: #171100;
-    font-family: Sen;
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: -1.16px;
 }
 
 .hero-text .desc {
@@ -218,6 +232,10 @@ a {
     min-width: 180px;
 }
 
+.hero-text .cousers:hover {
+    opacity: 0.9;
+}
+
 .hero-text .video {
     margin-left: 28px;
     display: flex;
@@ -233,11 +251,12 @@ a {
     border-radius: 32px;
     outline: 5px solid #fff;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 }
 
 .hero-text .video span {
     margin-left: 14px;
-    color: #171100;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
@@ -269,7 +288,7 @@ a {
 }
 
 .hero-text .value {
-    color: #171100;
+    color: var(--primary-color);
     font-family: Sen;
     font-size: 4.4rem;
     font-weight: 700;
@@ -293,14 +312,6 @@ a {
     align-items: center;
 }
 
-.courses .title {
-    color: #171100;
-    font-size: 3.8rem;
-    font-weight: 700;
-    line-height: 1.26;
-    font-family: Sen, sans-serif;
-}
-
 .heading .desc {
     margin-top: 16px;
     width: 458px;
@@ -309,19 +320,31 @@ a {
     line-height: 1.67;
 }
 
-.courses .arrow {
+.courses .chevron {
     margin-left: auto;
+    display: flex;
 }
 
 .courses .icon {
-    padding: 0;
-    border: none;
-    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #ffb900;
+    background: transparent;
+    color: #ffb900;
     cursor: pointer;
 }
 
+.courses .icon:hover {
+    background: #ffb900;
+    color: #fff;
+}
+
 .courses .icon:first-child {
-    margin-right: 12px;
+    margin-right: 18px;
 }
 
 .courses .list {
@@ -355,7 +378,7 @@ a {
 }
 
 .card .sub-title {
-    color: #171100;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
@@ -374,4 +397,68 @@ a {
 
 .card .row-bottom {
     margin-top: 12px;
+}
+
+.card .cta-btn {
+    padding: 18px 24px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card .value {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+/* Feedback */
+
+.feedback {
+    background: #2e2100;
+}
+
+.feedback-body {
+    padding: 96px 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Student */
+.student .img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.student .name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+    white-space: nowrap;
+}
+
+.student .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    white-space: nowrap;
+}
+
+/* Testimontial */
+.testimonial {
+    margin-left: 271px;
+}
+
+.testimonial .quot {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54;
 }
