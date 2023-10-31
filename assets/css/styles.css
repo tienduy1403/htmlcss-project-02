@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #171100;
+    --secondary-color: #ffb900;
 }
 
 html {
@@ -38,9 +39,9 @@ a {
 }
 
 .btn:hover {
-    /* opacity: 0.9; */
+    opacity: 0.9;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-    background: #ffb900;
+    background: var(--secondary-color);
 }
 
 .line-clamp {
@@ -228,12 +229,12 @@ a {
 .hero-text .cousers {
     padding: 24px 0;
     border-radius: 32px;
-    background: #ffb900;
+    background: var(--secondary-color);
     min-width: 180px;
 }
 
 .hero-text .cousers:hover {
-    opacity: 0.9;
+    background: var(--primary-color);
 }
 
 .hero-text .video {
@@ -332,14 +333,14 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    border: 1px solid #ffb900;
+    border: 1px solid var(--secondary-color);
     background: transparent;
-    color: #ffb900;
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
 .courses .icon:hover {
-    background: #ffb900;
+    background: var(--secondary-color);
     color: #fff;
 }
 
@@ -453,12 +454,96 @@ a {
 
 /* Testimontial */
 .testimonial {
-    margin-left: 271px;
+    margin-left: 241px;
 }
 
 .testimonial .quot {
+    margin-left: 30px;
     color: #fff;
     font-size: 2.6rem;
     font-style: italic;
     line-height: 1.54;
+}
+
+/* Features */
+.features {
+    padding: 200px 0;
+}
+
+/* features-top */
+.features-top {
+    display: flex;
+}
+
+.features-top .images {
+    display: flex;
+    gap: 30px;
+}
+
+.features-top .photo {
+    display: flex;
+    width: 270px;
+    height: 438px;
+}
+
+.features-top .photo-1 {
+    align-items: flex-end;
+}
+
+.features-top img {
+    border-radius: 16px;
+    width: 100%;
+    height: 404px;
+    object-fit: cover;
+}
+
+.features-top .text {
+    margin: 58px 0 58px 130px;
+}
+
+.features-top .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    line-height: 1.75;
+}
+
+.features-top .btn,
+.features-bottom .btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background: var(--secondary-color);
+}
+
+.features-top .btn:hover,
+.features-bottom .btn:hover {
+    background: var(--primary-color);
+}
+
+/* features-bottom */
+.features-bottom {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-bottom .text {
+    padding: 71px 0;
+    width: 570px;
+}
+
+.features-bottom .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    line-height: 1.75;
+}
+
+.features-bottom .images {
+    width: 470px;
+}
+
+.features-bottom .img {
+    border-radius: 20px;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
 }
