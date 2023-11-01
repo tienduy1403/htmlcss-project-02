@@ -367,8 +367,7 @@ a {
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
-.courses .photo,
-.blog-base .photo {
+.courses .photo {
     margin: -1px 0 0 -1px;
     border-radius: 12px 12px 0 0;
     width: calc(100% + 2px);
@@ -474,14 +473,21 @@ a {
     gap: 6px;
 }
 
-.student .dot {
+.student .dot,
+.blog-dott .item {
     border-radius: 6px;
     width: 6px;
     height: 6px;
     background: #634700;
 }
 
-.student .dot.active {
+.student .dot:hover,
+.blog-dott .item:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+.student .dot.active,
+.blog-dott .item.active {
     background: var(--secondary-color);
 }
 
@@ -601,20 +607,30 @@ a {
     line-height: 1.75;
 }
 
+/* blog-list */
+
+.blog-list {
+    display: flex;
+    overflow: hidden;
+}
+
 /* blog-card */
 .blog-card {
-    margin-top: 55px;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .blog-card .blog-base {
     border-radius: 16px;
     background: #fff;
-    /* box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05); */
 }
 
 .blog-base .photo {
     border-radius: 16px 16px 0 0;
+    width: 100%;
     height: 250px;
+
+    object-fit: cover;
 }
 
 .blog-card .body {
@@ -649,8 +665,11 @@ a {
     background: #e2dfda;
 }
 
-.blog-card .sub-title {
+.blog-card h3 {
     margin-top: 25px;
+}
+
+.blog-card .sub-title {
     color: #171100;
     font-weight: 600;
     line-height: 1.75;
@@ -664,7 +683,7 @@ a {
 }
 
 .blog-card .blog-base:hover {
-    box-shadow: 16px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 
 /* blog-dott */
@@ -676,14 +695,7 @@ a {
 }
 
 .blog-dott .item {
-    border-radius: 6px;
-    width: 6px;
-    height: 6px;
     background: #5f5b53;
-}
-
-.blog-dott .item:nth-child(2) {
-    background: #ffb900;
 }
 
 /* Footer */
@@ -726,7 +738,6 @@ a {
 .footer-top .icon {
     margin-top: 18px;
     display: flex;
-    /* gap: 18px; */
 }
 
 .footer-top .icon .social {
