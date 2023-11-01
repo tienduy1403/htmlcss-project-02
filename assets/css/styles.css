@@ -659,3 +659,128 @@ a {
 .blog-dott .item:nth-child(2) {
     background: #ffb900;
 }
+
+/* Footer */
+.footer {
+    padding: 96px 0 28px 0;
+    background: #2e2100;
+}
+
+/* footer-top */
+.footer-top {
+    display: flex;
+}
+
+.footer-top .logo {
+    color: #fff;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.footer-top .logo::after {
+    content: "";
+    display: inline-block;
+    margin-left: 2px;
+    border-radius: 4px;
+    width: 4px;
+    height: 4px;
+    background: var(--secondary-color);
+}
+
+.footer-top .desc {
+    margin-top: 18px;
+    width: 267px;
+    font-size: 1.4rem;
+    color: #bfbcb2;
+    line-height: 1.86;
+}
+
+.footer-top .icon {
+    margin-top: 18px;
+    display: flex;
+    /* gap: 18px; */
+}
+
+.footer-top .icon .social {
+    padding: 9px;
+}
+
+.footer-top .icon .social:hover {
+    background: rgba(179, 177, 177, 0.1);
+    border-radius: 5px;
+}
+
+.footer-top .company {
+    margin-left: 145px;
+}
+
+.footer-top .support {
+    margin-left: 178px;
+}
+
+.footer-top .address {
+    margin-left: 130px;
+}
+
+.footer-top .sub-title {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer-top .sub-title::after {
+    position: absolute;
+    bottom: -14px;
+    display: block;
+    content: "";
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer-top .list {
+    margin-top: 43px;
+}
+
+.footer-top .item {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.footer-top .item-1 {
+    width: 231px;
+}
+
+.footer-top .item:not(:first-child) {
+    margin-top: 12px;
+}
+
+.footer-top strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+/* footer-shape */
+.footer-shape {
+    margin-top: 38px;
+    width: 100%;
+    height: 1px;
+    background: #59554b;
+}
+
+/* footer-bottom */
+.footer-bottom {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.footer-bottom .desc {
+    color: #807d74;
+    line-height: 1.86;
+}
