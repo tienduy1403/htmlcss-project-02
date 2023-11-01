@@ -749,13 +749,19 @@ a {
     color: #bfbcb2;
     font-size: 1.4rem;
     line-height: 1.86;
+    white-space: nowrap;
+}
+
+.footer-top .click:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #bfbcb2;
 }
 
 .footer-top .item-1 {
-    width: 231px;
+    white-space: wrap;
 }
 
-.footer-top .item:not(:first-child) {
+.footer-top li:not(:first-child) {
     margin-top: 12px;
 }
 
