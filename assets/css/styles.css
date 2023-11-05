@@ -16,6 +16,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* Common */
 .content {
     margin-left: auto;
