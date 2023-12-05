@@ -1,0 +1,274 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .only-mobile {
+        display: none;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+}
+
+/* Tablet + Mobile */
+@media screen and (max-width: 991px) {
+    .navigation {
+        display: none;
+    }
+
+    .navbar .sign-up {
+        margin-right: 50px;
+    }
+
+    .header-mobile [type="checkbox"]:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header-mobile [type="checkbox"]:checked ~ .drawer-menu {
+        translate: 0 0;
+    }
+
+    .toggle-menu {
+        width: 24px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(137, 137, 137, 0.3);
+        z-index: 99;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.5s, opacity 0.5s;
+    }
+
+    .drawer-menu {
+        padding: 30px;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: #fff;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        translate: 100% 0;
+        transition: translate 0.5s;
+    }
+
+    .navigation-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .drawer-menu .nav {
+        margin: 30px 0 0;
+    }
+
+    .navigation {
+        margin: 0;
+    }
+
+    .navigation .click {
+        display: block;
+        padding: 15px 0 15px 300px;
+        color: #5f5b53;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .hero-body {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+    .title.lv1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .hero-text .desc {
+        text-align: center;
+    }
+
+    .hero-text .row {
+        justify-content: center;
+    }
+
+    .hero-text .desc-2 {
+        display: none;
+    }
+
+    .hero-image {
+        margin: 30px auto 0;
+    }
+
+    .hero-image .media {
+        width: 400px;
+        height: 582px;
+    }
+
+    .hero-image .base {
+        top: 0;
+    }
+
+    .courses {
+        padding-top: 100px;
+    }
+
+    .courses .list,
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .courses .card {
+        width: 100%;
+    }
+
+    .feedback-body {
+        justify-content: center;
+    }
+
+    .testimonial {
+        margin-left: 50px;
+    }
+
+    .features {
+        padding: 200px 0 0;
+    }
+
+    .features-top {
+        flex-direction: column-reverse;
+    }
+
+    .features-top .text {
+        margin: 0;
+    }
+
+    .title.lv2 {
+        width: 95%;
+    }
+
+    .features-top .images {
+        justify-content: center;
+    }
+
+    .features-bottom {
+        margin-top: 100px;
+    }
+
+    .features-bottom .images {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .features-bottom .img {
+        width: 90%;
+        height: auto;
+    }
+
+    .footer-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+
+    .footer-top .company,
+    .footer-top .address,
+    .footer-top .support {
+        margin-left: 0;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .only-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .navbar .sign-up {
+        display: none;
+    }
+
+    .drawer-menu {
+        inset: 0 0 0 20%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav .click {
+        display: block;
+        padding: 15px 0 15px 150px;
+        color: #5f5b53;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .nav .seperate {
+        margin: 15px 0;
+        width: 100%;
+        height: 1px;
+        border-radius: 99px;
+        background: #ccc;
+    }
+
+    .title.lv1 {
+        font-size: 4rem;
+    }
+
+    .hero-text .desc {
+        font-size: 1.6rem;
+    }
+
+    .hero-text .cousers {
+        padding: 20px 0;
+        min-width: 138px;
+    }
+
+    .hero-text .play-video {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero-text .video span {
+        font-size: 1.6rem;
+    }
+
+    .hero-text .video:hover {
+        width: auto;
+        height: 56px;
+    }
+
+    .hero-image .media {
+        display: none;
+    }
+
+    .hero-image .base {
+        position: static;
+    }
+
+    .hero-text .row-stats {
+        column-gap: 30px;
+        margin-top: 30px;
+    }
+
+    .hero-text .row-stats .stats {
+        text-align: center;
+    }
+
+    .hero-text .stats:not(:first-child) {
+        margin: 0;
+    }
+}
