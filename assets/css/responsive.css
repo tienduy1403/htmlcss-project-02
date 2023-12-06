@@ -1,4 +1,19 @@
 /* PC */
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .hero-image .media {
+        width: 400px;
+        height: 583px;
+    }
+
+    .hero-image .base {
+        scale: 0.9;
+    }
+
+    .hero-text .row {
+        scale: 0.8;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .only-mobile {
         display: none;
@@ -224,8 +239,12 @@
         background: #ccc;
     }
 
+    .hero {
+        height: calc(100vh - 68.83px);
+    }
+
     .title.lv1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .hero-text .desc {
@@ -246,17 +265,13 @@
         font-size: 1.6rem;
     }
 
-    .hero-text .video:hover {
-        width: auto;
-        height: 56px;
-    }
-
     .hero-image .media {
         display: none;
     }
 
     .hero-image .base {
         position: static;
+        scale: 0.8;
     }
 
     .hero-text .row-stats {
@@ -270,5 +285,90 @@
 
     .hero-text .stats:not(:first-child) {
         margin: 0;
+    }
+
+    .hero-text .value {
+        font-size: 2.4rem;
+    }
+
+    .hero-text .text {
+        font-size: 1.4rem;
+    }
+
+    .title.lv2 {
+        font-size: 3rem;
+    }
+
+    .heading .desc {
+        font-size: 1.6rem;
+    }
+
+    .heading .desc {
+        width: auto;
+    }
+
+    .courses .chevron {
+        display: none;
+    }
+
+    .courses .list,
+    .blog-card {
+        grid-template-columns: 1fr;
+    }
+
+    .chevron-mobile {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .feedback-body {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        row-gap: 30px;
+    }
+
+    .testimonial {
+        margin-left: 0;
+    }
+
+    .testimonial .quot {
+        font-size: 1.8rem;
+    }
+
+    .features {
+        padding-top: 100px;
+    }
+
+    .features-top .photo,
+    .features-top img {
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .features-bottom {
+        flex-direction: column;
+    }
+
+    .features-bottom .text {
+        width: auto;
+    }
+
+    .features-bottom .img {
+        width: 70%;
+    }
+
+    .features-bottom .images {
+        padding-bottom: 50px;
+        justify-content: flex-start;
+        width: auto;
+    }
+
+    .blog-text .desc {
+        width: auto;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
     }
 }
